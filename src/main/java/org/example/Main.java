@@ -9,15 +9,15 @@ public class Main {
         System.out.println(shouldWakeUp (true, 8));
         System.out.println(shouldWakeUp (true, -1));*/
 
-        /*System.out.println(hasTeen(9, 99, 19));
+        System.out.println(hasTeen(9, 99, 19));
         System.out.println(hasTeen(23, 15, 42));
-        System.out.println(hasTeen(22, 23, 34));*/
+        System.out.println(hasTeen(22, 23, 34));
 
         /*System.out.println(isCatPlaying(true, 10));
         System.out.println(isCatPlaying(false, 36));
         System.out.println(isCatPlaying(false, 35));*/
 
-        Scanner scanner = new Scanner(System.in);
+        /*Scanner scanner = new Scanner(System.in);*/
 
         /*System.out.println("Enter width of rectangle: ");
         double width = scanner.nextDouble();
@@ -38,7 +38,7 @@ public class Main {
     }
 
     public static boolean hasTeen(int firstAge, int secondAge, int thirdAge) {
-        if((firstAge>13 && firstAge<19) || (secondAge>13 && secondAge<19) || (secondAge>13 && secondAge<19)){
+        if((firstAge>13 && firstAge<=19) || (secondAge > 13 && secondAge <= 19) || (thirdAge > 13 && thirdAge<=19)){
             return true;
         }else {
             return false;
